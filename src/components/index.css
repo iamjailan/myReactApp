@@ -1,0 +1,646 @@
+*{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+}
+.navbar {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: #11111f;
+    align-items: center;
+    box-shadow: 2px 4px 7px rgba(4, 3, 7, 0.6);
+}
+.navbar img {
+    width: 170px;
+}
+.navbar  h1 {
+    color: #59cbe8;
+}
+.content {
+    max-height: 80vh;
+    display: flex;
+    padding: 20px;
+    justify-content: space-around;
+}
+.content .content--card {
+    padding: 20px;
+    height: 550px;
+    /* background-color: aqua; */
+    width: 400px;
+    border-radius: 10px;
+    border: 2px solid #59cbe8;
+    box-shadow: 2px 3px 7px rgba(0, 0, 0 , 0.7);
+}
+.content--card .content--title {
+    padding: 10px 20px;
+    font-size: 3rem;
+    white-space: nowrap;
+    color: #59cbe8;
+}
+.svg--file {
+    width: 20px;
+}
+.content--card .content--text {
+    font-size: 2rem;
+    padding: 20px 4px;
+    /* letter-spacing: 1px; */
+    line-height: 37px;
+    font-weight: 500;
+    text-transform: lowercase;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #11111f;
+}
+.content--phone, .content--add {
+    display: flex;
+    color: rgba(0, 0, 0 , 0.7);
+    align-items: center;
+}
+img {
+    border-radius: 10px;
+    width: 800px;
+}
+.content--image {
+    display: flex;
+    align-items: center;
+}
+/* img {
+    width: 800px;
+} */
+
+.card {
+    position: relative;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    /* height: 400px; */
+    /* width: 400px; */
+    /* background-color: aqua; */
+    border-radius: 10px;
+    box-shadow: 2px 5px 7px rgba(0, 0, 0 , 0.4);
+    align-items: center;
+    margin-top: 40px;
+    margin: 30px 5px 0px 5px;
+    transition: .5s;
+}
+/* .card:hover {
+    height: 420px;
+    width: 420px;
+} */
+.card--image {
+    width: 400px;
+    height: 250px;
+}
+
+.card--first {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+}
+.card--second {
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+.card--second .card--btn {
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 2px solid black;
+    transition: .5s;
+}
+.card--second .card--btn:hover {
+    background-color: black;
+    color: #fff;
+}
+.card--details {
+    font-size: 1.1rem;
+}
+.card--star {
+    cursor: pointer;
+}
+.card--list {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
+}
+.top--title {
+    text-align: center;
+    padding: 10px;
+    font-size: 3rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.card--type {
+    position: absolute;
+    top: 22px;
+    left: 40px;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0 , 0.8);
+    /* font-weight: 900; */
+    color: #fff;
+    border-radius: 10px;
+}
+.benz {
+    height: 80vh;
+    padding: 30px;
+}
+.card--benz {
+    border: 3px solid rgba(0, 0, 0 , 0.4);
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+}
+.benz--text {
+    padding: 20px 10px;
+    font-size: 1.5rem;
+    letter-spacing: 1.2px;
+    line-height: 40px;
+}
+.benz--title {
+    font-size: 3rem;
+}
+.benz--ads--title {
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+}
+.profile {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    width: 200px;
+    box-shadow: 2px 5px 8px rgba(0, 0, 0 , 0.4);
+    border-radius: 10px;
+    align-items: center;
+    padding: 10px;
+}
+.profile img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+.profile h3 {
+    margin: 10px 0px;
+}
+.profile--list {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto;
+    padding: 20px;
+}
+.card .hide--btn {
+    visibility: hidden;
+}
+.form--class {
+    height: 600px;
+    width: 1300px;
+    z-index: 999;
+    background-color: aqua;
+    border: 3px solid #59cbe8;
+    position: fixed;
+    top: 50px;
+    left: 6%;
+    background-color: rgba(0, 0, 0 , 0.9);
+    border-radius: 10px;
+    color: #59cbe8;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.form--class h1 {
+    margin-bottom: 20px;
+}
+.form--class form {
+    display: flex;
+    flex-direction: column;
+    padding: 10PX;
+}
+.form--class form input  {
+    padding: 10px 30px;
+    outline: none;
+    margin: 20px 0px;
+    border-radius: 10px;
+    border: none;
+}
+.form--class button {
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    transition: .6s;
+    font-size: 1rem;
+}
+.form--class button:hover {
+    background-color: #fff;
+    color: #000;
+    border: 2px solid #59cbe8;
+}
+.close--btn {
+    margin-top: 40px;
+}
+.hide--form {
+    visibility: hidden;
+    height: 0px;
+    width: 0px;
+}
+.chat--div {
+    position: relative;
+    height: 60vh;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.chat--div .chat--title {
+    text-align: center;
+    font-size: 3rem;
+}
+.chat--child {
+    padding: 20px;
+    height: 100%;
+}
+
+.chat--input--div {
+    display: flex;
+    position: absolute;
+    bottom: 20px;
+}
+
+.chat--child .chat--input {
+    outline: none;
+    padding: 20px;
+    width: 1300px;
+    border: 2px solid #59cbe8;
+    border-right: none;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.chat--btn {
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #59cbe8;
+    border-left: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transition: .5s;
+}
+.chat--btn--false {
+    padding: 10px 21px;
+    background-color: transparent;
+    border: 2px solid #59cbe8;
+    border-left: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transition: .5s;
+}
+.chat--btn:hover {
+    background-color: #000;
+    color: #fff;
+}
+.chat--message--div {
+    padding: 20px;
+    height: 30vh;
+    width: 1370px;
+    border-radius: 10px;
+    display: flex;
+    border: 2px solid #59cbe8;
+}
+.chat--message--div h4 {
+    margin-top: 10px;
+}
+.chat--message--profile {
+    width: 20px;
+    height: 40px;
+    margin-right: 10px;
+}
+.feedback--div {
+    /* height: 60vh; */
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    position: relative;
+}
+.feedback--div .feedback--form {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: baseline;
+}
+.feedback--div .feedback--form input {
+    padding: 20px;
+    width: 500px;
+    outline: none;
+    border-radius: 10px;
+    border: 2px solid #59cbe8;
+    margin: 10px 0px;
+}
+.feedback--div .feedback--form textarea {
+    height: 40vh;
+    border-radius: 10px;
+    border: 2px solid #59cbe8;
+    padding: 10px;
+}
+.feedback--title {
+    font-size: 3rem;
+    text-align: center;
+}
+textarea {
+    resize: none;
+    outline: none;
+}
+.feedback--div .feedback--btn {
+    margin: 20px 0px;
+    width: 500px;
+    padding: 20px;
+    border: 2px solid #59cbe8;
+    border-radius: 10px;
+    background-color: transparent;
+    cursor: pointer;
+    color: #000;
+    font-size: 15px;
+    font-weight: 600;
+    transition: .5s;
+}
+.feedback--div .feedback--btn:hover {
+    background-color: #11111f;
+    color: #fff;
+}
+.card--remove {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: transparent;
+    cursor: pointer;
+    width: 100%;
+    transition: .5s;
+    border: 2px solid #59cbe8;
+    color: #000;
+}
+.card--remove:hover {
+    background-color: red ;
+    color: #fff;
+    border: 2px solid red;
+}
+@media screen and (max-width: 1400px) {
+    .content {
+        padding: 10px;
+    }
+    .content .content--card {
+        height: 400px;
+        width: 300px;
+        font-size: 20px;
+    }
+    .content .content--text {
+        font-size: .7rem;
+    }
+    .content .content--title {
+        font-size: 20px;
+    }
+    .content .content--phone, .content--add {
+        font-size: .6rem;
+    }
+    .top--title {
+        font-size: 1.8rem;
+    }
+    .content--image img {
+        width: 500px;
+    }
+    .card {
+        width: 250px;
+        display: grid;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .card .card--image {
+        width: 250px;
+    }
+    .card--list {
+        display: grid;
+        justify-content: space-around;
+        grid-template-columns: auto auto auto;
+    }
+    .card--image {
+        width: 300px;
+    }
+    .benz img {
+        width: 500px;
+    }
+    .benz {
+        height: 60vh;
+    }
+    .profile--list {
+        display: grid;
+        justify-content: space-around;
+        grid-template-columns: auto auto;
+        align-items: center;
+        position: relative;
+    }
+    .profile {
+        margin-top: 20px;
+    }
+    .form--class {
+        width: 1000px;
+        left: 7%;
+    }
+    .chat--child .chat--input {
+        width: 750px;
+    }
+    .chat--message--div {
+        width: 800px;
+        height: 20vh;
+    }
+     .chat--div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 55vh;
+    }
+    .feedback--div {
+        margin-top: 330px;
+    }
+    
+}
+@media screen and (max-width: 1024px){
+    .content .content--card {
+        height: 350px;
+        width: 300px;
+    }
+    .content .content--title {
+        font-size: 20px;
+    }
+    .content .content--card .content--text {
+        font-size: 15px;
+    }
+    .content .content--image {
+        width: 300px;
+    }
+    .top--title {
+        font-size: 20px;
+    }
+    .content--text {
+        font-size: 10px;
+    }
+    .content--image img {
+        height: 300px;
+        width: 300px;
+    }
+    .card {
+        height: 500px;
+        width: 200px;
+        font-size: 12px;
+    }
+    .card .card--image {
+        width: 200px;
+    }
+    .card--list {
+        display: grid;
+        grid-template-columns: auto auto;
+        align-items: center;
+    }
+    .benz img{
+        width: 300px;
+        height: 300px;
+    }
+    .benz .benz--text {
+        font-size: .6rem;
+    }
+
+    .form--class {
+        width: 650px;
+        left: 10%;
+    }
+    .chat--child .chat--input {
+        width: 630px;
+    }
+    .chat--message--div {
+        width: 700px;
+        height: 20vh;
+    }
+     .chat--div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 50vh;
+    }
+} 
+@media screen and (max-width: 786px) {
+    .navbar {
+        font-size: 5px;
+    }
+    .content {
+        display: flex;
+        flex-direction: column;
+        margin-top: 200px;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 2px;
+    }
+    .content .content--card {
+        height: 500px;
+        width: 200px;
+        margin-bottom: 20px;
+    }
+    /* .content .content--image img {
+        width: 200px;
+        height: 200px;
+        align-self: center;
+    } */
+    .top--title {
+        margin-top: 150px;
+    }
+    
+    .card {
+        width: 200px;
+        height: 300px;
+    }
+    .card .card--image {
+        width: 200px;
+        height: 100px;
+    }
+    .card--list {
+        /* width: 200px; */
+        display:flex;
+        flex-direction: column;
+        /* grid-template-columns: auto; */
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .benz {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* width: 200px; */
+        height: 400px;
+    }
+    .card--benz {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+    .benz img{
+        /* width: 200px; */
+        height: 150px;
+    }
+    .profile--list {
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .top--title.benz--top {
+        margin-top: 250px;
+    }
+    .benz--title {
+        font-size: 1rem;
+    }
+    .form--class {
+        width: 300px;
+        left: 6%;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .chat--child .chat--input {
+        width: 150px;
+    }
+    .chat--message--div {
+        width: 250px;
+        height: 20vh;
+    }
+    .chat--div .chat--title {
+        font-size: 1.7rem;
+    }
+    .chat--div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 55vh;
+    }
+    h4, h3, h2, h1 {
+        font-size: 10px;
+    }
+    .feedback--div {
+        margin-top: 230px;
+    }
+    .feedback--div .feedback--form input {
+        width: 200px;
+    }
+    .feedback--div .feedback--btn {
+        width: 200px;
+    }
+}

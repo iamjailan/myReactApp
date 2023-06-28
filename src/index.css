@@ -1,0 +1,82 @@
+/* @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300&family=Roboto:ital,wght@0,500;1,500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+body {
+    width: 100%;
+}
+.navbar {
+    height: 100px;
+    box-shadow: 0px 4px 8px rgba(0, 0 , 0 , 0.09);
+}
+.navbar > img {
+    width: 120px;
+}
+.body {
+    padding: 20px;
+}
+
+.body--photo {
+    max-width: 400px;
+    align-self: center;
+}
+.body {
+    display: flex;
+    flex-direction: column;
+}
+.body--title {
+    margin-bottom: 15px;
+}
+.body--text {
+    margin-top: 0;
+}
+.card {
+    height: 320px;
+    width: 220px;
+    border-radius: 5px;
+    padding: 10px;
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.card > img {
+    width: 100%;
+    border-radius: 10px;
+    height: 250px;
+}
+.card .star {
+    display: flex;
+    padding: 10px 0px;
+}
+.card .star i {
+    color: red;
+}
+.card--text {
+    font-size: 12px;
+    margin-bottom: 5px;
+    
+}
+.card small {
+    font-size: 15px;
+    font-weight: 100;
+    color: rgba(0, 0 , 0 , 0.6);
+}
+.card--list {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: auto;
+    justify-content: space-around;
+
+}
+
+.card--spot {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: white;
+    padding: 3px;
+    border-radius: 5px;
+} */
